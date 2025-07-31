@@ -1,13 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Widget from "../components/widget.astro";
+import TitleIcon from "../components/titleIcon.astro";
+import List from "../components/list.astro";
+import Section from "../components/section.astro";
 ---
 <Layout>
   <head>
     <title>Perfil</title>
 </head>
 <div class="informacion">
-  <img src="/dist/icons/profile_icon.svg" class="foto rounded-circle" alt="">
+  <img src="/icons/profile_icon.svg" class="foto rounded-circle" alt="">
   <Widget flex="row" width="w-[400px]" height="h-auto">
     <p>Nombre de usuario</p>
     <p>Correo electronico</p>
@@ -15,6 +18,7 @@ import Widget from "../components/widget.astro";
   </Widget>
 </div>
 </Layout>
+P
 <style>
   body {
     display: flex;
@@ -29,9 +33,11 @@ import Widget from "../components/widget.astro";
     padding: 20px;
     background-color: #D4D1F0;
   }
+
   .foto {
     height: 400px;
     width: 400px;
     display: block;
   }
+
 </style>

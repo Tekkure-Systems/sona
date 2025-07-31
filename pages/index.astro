@@ -14,33 +14,35 @@ import TopRankings from "../components/topRankings.astro";
     </head>
     <body>
     <Section>
+        <p id="nombreUsuario" class="text-black text-2xl font-bold m-4"></p>
         <div class="flex flex-nowrap overflow-x-auto items-center justify-center w-2/6 pl-2 snap-x snap-mandatory scroll-pl-5 p-8 carrusel">
             <div class="elemento">
-                <img id="carrusel6"src="/dist/covers/apt.jpg" alt="">
+                <img id="carrusel6"src="/covers/apt.jpg" alt="">
             </div>
             <div class="elemento">
-                <img id="carrusel5" src="/dist/covers/apt.jpg" alt="">
+                <img id="carrusel5" src="/covers/apt.jpg" alt="">
             </div>
             <div class="elemento">
-                <img id="carrusel4" src="/dist/covers/apt.jpg" alt="">
+                <img id="carrusel4" src="/covers/apt.jpg" alt="">
             </div>
             <div class="elemento">
-                <img id="carrusel3" src="/dist/covers/apt.jpg" alt="">
+                <img id="carrusel3" src="/covers/apt.jpg" alt="">
             </div>
             <div class="elemento">
-                <img id="carrusel2" src="/dist/covers/apt.jpg" alt="">
+                <img id="carrusel2" src="/covers/apt.jpg" alt="">
             </div>
             <div class="elemento">
-                <img id="carrusel1" src="/dist/covers/apt.jpg" alt="">
+                <img id="carrusel1" src="/covers/apt.jpg" alt="">
             </div>
         </div>
+
         <div class="flex flex-no items-center rounded-3xl bg-backgroundSecondary w-4/6 gap-2 m-6 p-6 ml-0">
             <div class=" justify-between texto">
                 <p class="currently text font-bold text-3xl">
                     Recientemente escuchado
                 </p>
                 <p id="titulo" class="titulo font-bold text-2xl">
-                    No hay solucion
+                    APT
                 </p>
                 <a href="/artist">
                     <p id="autor" class="autor font-bold text-2xl">
@@ -50,17 +52,18 @@ import TopRankings from "../components/topRankings.astro";
             </div>
 
             <div class="imagen">
-                <img src="/dist/covers/apt.jpg" alt="" class="portada" id="currentImage">
+                <img src="/covers/apt.jpg" alt="" class="portada" id="currentImage">
             </div>
         </div>
+
     </Section>
     <Section flexOrientation="flex-row" extraClass="gap-0">
         <TopRankings>
-            <TitleIcon iconSrc="/dist/icons/track_icon.svg" title="Tus Canciones"></TitleIcon>
+            <TitleIcon iconSrc="/icons/track_icon.svg" title="Tus Canciones"></TitleIcon>
             <Widget width="w-72" height="h-fit" flex="flex-col">
                 <a href="/topsongs"
                    class="flex flex-col justify-start items-center p-2 w-full h-full rounded-3xl border-none bg-backgroundSecondary">
-                    <img src="/dist/covers/apt.jpg" alt="" class="w-52 h-52 rounded-2xl">
+                    <img src="/covers/apt.jpg" alt="" class="w-52 h-52 rounded-2xl">
                 </a>
                 <a href="/topsongs" class="no-underline text-black">
                     <p class="titulo font-bold text-2xl">
@@ -70,11 +73,11 @@ import TopRankings from "../components/topRankings.astro";
             </Widget>
         </TopRankings>
         <TopRankings>
-            <TitleIcon iconSrc="/dist/icons/artist_icon.svg" title="Tus Artistas"></TitleIcon>
+            <TitleIcon iconSrc="/icons/artist_icon.svg" title="Tus Artistas"></TitleIcon>
             <Widget width="w-72" height="h-fit" flex="flex-col">
                 <a href="/topartists"
                    class="flex flex-col justify-start items-center p-2 w-full h-full rounded-3xl border-none bg-backgroundSecondary">
-                    <img src="dist/covers/glass-animals.jpg" alt="" class="w-52 h-52 rounded-2xl">
+                    <img src="/covers/glass-animals.jpg" alt="" class="w-52 h-52 rounded-2xl">
                 </a>
                 <a href="/topartists" class="no-underline text-black">
                     <p class="titulo font-bold text-2xl">
@@ -84,11 +87,11 @@ import TopRankings from "../components/topRankings.astro";
             </Widget>
         </TopRankings>
         <TopRankings>
-            <TitleIcon iconSrc="/dist/icons/album_icon.svg" title="Tus Albums"></TitleIcon>
+            <TitleIcon iconSrc="/icons/album_icon.svg" title="Tus Albums"></TitleIcon>
             <Widget width="w-72" height="h-fit" flex="flex-col">
                 <a href="/topalbums"
                    class="flex flex-col justify-start items-center p-2 w-full h-full rounded-3xl border-none bg-backgroundSecondary">
-                    <img src="dist/covers/plastic-beach.jpg" alt="" class="w-52 h-52 rounded-2xl">
+                    <img src="/covers/plastic-beach.jpg" alt="" class="w-52 h-52 rounded-2xl">
                 </a>
                 <a href="/topalbums" class="no-underline text-black">
                     <p class="titulo font-bold text-2xl">
@@ -98,9 +101,10 @@ import TopRankings from "../components/topRankings.astro";
             </Widget>
         </TopRankings>
     </Section>
+
     <Section flexOrientation="flex-row" extraClass="gap-6">
         <TopRankings>
-            <TitleIcon iconSrc="/dist/icons/track_icon.svg" title="Ranking Canciones"></TitleIcon>
+            <TitleIcon iconSrc="/icons/track_icon.svg" title="Ranking Canciones"></TitleIcon>
             <div class="w-full">
                 <List number="1" title="null"></List>
                 <List number="2" title="null"></List>
@@ -115,7 +119,7 @@ import TopRankings from "../components/topRankings.astro";
             </div>
         </TopRankings>
         <TopRankings>
-            <TitleIcon iconSrc="/dist/icons/artist_icon.svg" title="Ranking Artistas"></TitleIcon>
+            <TitleIcon iconSrc="/icons/artist_icon.svg" title="Ranking Artistas"></TitleIcon>
             <div class="w-full">
                 <List number="1" title="null"></List>
                 <List number="2" title="null"></List>
@@ -130,7 +134,7 @@ import TopRankings from "../components/topRankings.astro";
             </div>
         </TopRankings>
         <TopRankings>
-            <TitleIcon iconSrc="/dist/icons/album_icon.svg" title="Ranking Albums"></TitleIcon>
+            <TitleIcon iconSrc="/icons/album_icon.svg" title="Ranking Albums"></TitleIcon>
             <div class="w-full">
                 <List number="1" title="null"></List>
                 <List number="2" title="null"></List>
@@ -146,59 +150,82 @@ import TopRankings from "../components/topRankings.astro";
         </TopRankings>
     </Section>
     </body>
-    <script>
-        console.log(localStorage.spotifyToken)
-        const token = localStorage.getItem("spotify_token");
-        if (token) {
-            fetch("https://api.spotify.com/v1/me/player/currently-playing", {
-                headers: {
-                    Authorization: `Bearer ${token}`
-                }
-            }).then(res => res.json()).then(data => {
-                if (data?.item) { 
-                    const track = data.item;
-                    const trackName = track.name;
-                    const artistName = track.artists[0].name;
-                    const trackImage = track.album.images[0].url;
+<script>
+  const token = localStorage.getItem("spotify_token");
 
-                    document.getElementById("titulo").textContent = trackName;
-                    document.getElementById("autor").textContent = artistName;
-                    document.getElementById("currentImage").src = trackImage;
-                }
-                })
-            fetch("https://api.spotify.com/v1/me/player/recently-played?limit=6", {
-                headers: {
-                    Authorization: `Bearer ${token}`
-                }
-            }).then(res => res.json()).then(data => {
-                if (data?.items?.length > 0) { 
-                    //ciclo para relacionar lo que es el carrusel con los ultimos tracks
-                    let contador;
-                    for(contador=0;contador<6;contador=contador+1){
-                        document.getElementById("carrusel"+(contador+1)).src = data.items[contador].track.album.images[0].url;
-                    }
-                }
-                })
-        } else {
-            console.warn("No hay token disponible");
+  if (token) {
+    fetch("https://api.spotify.com/v1/me/player/currently-playing", {
+      headers: { Authorization: `Bearer ${token}` }
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data?.item) {
+        const track = data.item;
+        document.getElementById("titulo").textContent = track.name;
+        document.getElementById("autor").textContent = track.artists[0].name;
+        document.getElementById("currentImage").src = track.album.images[0].url;
+      }
+    });
+
+    fetch("https://api.spotify.com/v1/me/player/recently-played?limit=6", {
+      headers: { Authorization: `Bearer ${token}` }
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data?.items?.length > 0) {
+        for (let i = 0; i < 6; i++) {
+          document.getElementById("carrusel" + (i + 1)).src =
+            data.items[i].track.album.images[0].url;
         }
-    </script>
-</Layout>
+      }
+    });
+
+    fetch("https://api.spotify.com/v1/me", {
+      headers: { Authorization: `Bearer ${token}` }
+    })
+    .then(res => res.json())
+    .then(userData => {
+      if (userData.display_name && userData.id) {
+        const nombreUsuario = userData.display_name;
+        const spotifyId = userData.id;
+
+        document.getElementById("nombreUsuario").textContent = `Hola, ${nombreUsuario}`;
+
+        fetch("/api/endpoint", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ nombre: nombreUsuario, spotify_id: spotifyId })
+        })
+        .then(res => res.json())
+        .then(data => {
+          console.log(data.inserted ? "Usuario insertado" : "Usuario ya existe");
+        })
+        .catch(err => console.error("Error al insertar usuario:", err));
+      }
+    });
+  } else {
+    console.warn("No hay token disponible");
+  }
+</script>
+
 <style>
     p {
         margin: 10px;
     }
+
     body {
         display: flex;
         flex-direction: column;
         background-color: #D4D1F0;
         gap: 20px;
     }
+
     .tops {
         display: flex;
         gap: 60px;
         padding: 20px;
     }
+
     .cardview {
         background-color: #B8B2E6;
         display: flex;
@@ -211,6 +238,7 @@ import TopRankings from "../components/topRankings.astro";
         border-radius: 5%;
         border: none;
     }
+
     .infografia {
         background-color: #9c93dc;
         border-radius: 50%;
@@ -218,23 +246,30 @@ import TopRankings from "../components/topRankings.astro";
         width: 60px;
         margin-top: 20px;
     }
+
     .img-card {
         height: 250px;
         width: 250px;
         border-radius: 10%;
         margin-top: 40px;
     }
+
+    /* Personalización de la barra de scroll */
     .carrusel::-webkit-scrollbar {
         display: none;
     }
+
     .carrusel::-webkit-scrollbar-track {
         background: #b8b2e6;
         border-radius: 10px;
     }
+
     .carrusel::-webkit-scrollbar-thumb {
         background: #9c93dc;
         border-radius: 10px;
     }
+
+
     .elemento {
         display: flex;
         justify-content: center;
@@ -248,18 +283,23 @@ import TopRankings from "../components/topRankings.astro";
         border-radius: 25px;
         overflow: hidden;
     }
+
     .elemento img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: cover; /* Hace que la imagen se ajuste sin deformarse */
         border-radius: 25px;
     }
+
+    /* Asegurar que el primer y último elemento no se vean cortados */
     .elemento:first-child {
         margin-left: 20px;
     }
+
     .elemento:last-child {
         margin-right: 20px;
     }
+
     .recientemente {
         display: flex;
         flex-direction: row;
@@ -271,6 +311,8 @@ import TopRankings from "../components/topRankings.astro";
         height: 100%;
         gap: 10px;
     }
+
+
     .texto {
         display: flex;
         flex-direction: column;
@@ -278,9 +320,13 @@ import TopRankings from "../components/topRankings.astro";
         flex-grow: 2;
         width: 50%;
     }
+
+    /* Mueve el texto 'otros oyentes' hasta abajo */
     .otros.oyentes {
         margin-top: auto;
     }
+
+    /* Imagen dentro de 'recientemente' */
     .imagen {
         display: flex;
         justify-content: center;
@@ -289,6 +335,7 @@ import TopRankings from "../components/topRankings.astro";
         border-radius: 20px;
         width: 275px;
     }
+
     .portada {
         width: 250px;
         height: 250px;
