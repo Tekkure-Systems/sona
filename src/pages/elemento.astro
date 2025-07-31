@@ -16,30 +16,33 @@ import Section from "../components/section.astro"
             <form action="" method="">
                 <div class="d-flex justify-content-center align-items-center">
                     <div class="ranking">
-                      <input type="radio" id="star5" name="rating"/>
-                      <label for="star5" title="5 estrellas">★</label>               
-                      <input type="radio" id="star4" name="rating"/>
-                      <label for="star4" title="4 estrellas">★</label>              
-                      <input type="radio" id="star3" name="rating"/>
-                      <label for="star3" title="3 estrellas">★</label>                
-                      <input type="radio" id="star2" name="rating"/>
-                      <label for="star2" title="2 estrellas">★</label>
-                      <input type="radio" id="star1" name="rating"/>
-                      <label for="star1" title="1 estrella">★</label>
+                        <input type="radio" id="star5" name="rating"/>
+                        <label for="star5" title="5 estrellas">★</label>
+                        <input type="radio" id="star4" name="rating"/>
+                        <label for="star4" title="4 estrellas">★</label>
+                        <input type="radio" id="star3" name="rating"/>
+                        <label for="star3" title="3 estrellas">★</label>
+                        <input type="radio" id="star2" name="rating"/>
+                        <label for="star2" title="2 estrellas">★</label>
+                        <input type="radio" id="star1" name="rating"/>
+                        <label for="star1" title="1 estrella">★</label>
                     </div>
-                  </div>
-                  <input type="text" class="w-full h-12 fs-6 border-none outline-0 bg-backgroundPrimary mb-2.5 form-control" placeholder="Comentar"/>
+                </div>
+                <input type="text"
+                       class="w-full h-12 fs-6 border-none outline-0 bg-backgroundPrimary mb-2.5 form-control"
+                       placeholder="Comentar"/>
                 <button type="submit" class="btn btn-primary mt-3">Enviar</button>
-              </form>
+            </form>
         </div>
     </Section>
 </Layout>
 <style>
     body {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
+
     .ranking {
         direction: rtl;
     }
@@ -52,7 +55,8 @@ import Section from "../components/section.astro"
         font-size: 3rem;
         color: #ffffff;
     }
+
     input:checked ~ label {
-      color: #6050dc;
+        color: #6050dc;
     }
-  </style>
+</style>
