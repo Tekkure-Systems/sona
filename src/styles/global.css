@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import "@fontsource-variable/montserrat";
+@theme {
+    --color-background: #D4D1F0;
+    --color-backgroundPrimary: #B8B2E6;
+    --color-backgroundSecondary: #9C93DC;
+}
+body {
+    font-family: 'Montserrat Variable', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+main {
+    flex-grow: 1;
+    padding: 1.5rem;
+    overflow: auto;
+}
