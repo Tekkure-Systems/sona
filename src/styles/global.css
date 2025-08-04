@@ -5,9 +5,6 @@
     --color-backgroundPrimary: #B8B2E6;
     --color-backgroundSecondary: #9C93DC;
 }
-body {
-    font-family: 'Montserrat Variable', sans-serif;
-}
 * {
     box-sizing: border-box;
 }
